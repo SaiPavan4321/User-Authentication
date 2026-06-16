@@ -16,7 +16,7 @@ loginForm.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/auth/login",
+            "https://user-auth-backend-lgxu.onrender.com/api/auth/login",
             {
                 method: "POST",
 
@@ -113,7 +113,7 @@ signupForm.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/auth/register",
+            "https://user-auth-backend-lgxu.onrender.com/api/auth/register",
             {
                 method: "POST",
 
