@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-card">
+
+            <div class="header">
+
+                <h1>Welcome Back 👋</h1>
+
+                <p>Your account dashboard</p>
+
+            </div>
+
+            <div class="profile-section">
+
+                <div class="profile-circle">
+                    <img src="https://www.svgrepo.com/show/419269/avatar-human-person.svg" alt="Profile">
+                </div>
+
+                <div class="profile-info">
+
+                    <h2 id="userName">SaiPavan</h2>
+
+                    <p id="userEmail">
+                        esp93@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <h4>User ID</h4>
+                    <p id="userId">
+                        Loading...
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Account Status</h4>
+                    <p>Active ✅</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Authentication</h4>
+                    <p>JWT Protected 🔒</p>
+                </div>
+
+                <div class="info-card">
+                    <h4>Database</h4>
+                    <p>MongoDB Atlas ☁️</p>
+                </div>
+
+            </div>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

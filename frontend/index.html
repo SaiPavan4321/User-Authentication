@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="tabs">
+            <button class="tab active" id="loginTab">
+                Sign In
+            </button>
+
+            <button class="tab" id="signupTab">
+                Create Account
+            </button>
+        </div>
+
+        <!-- LOGIN -->
+
+        <form id="loginForm">
+
+            <h1>Welcome Back.</h1>
+            <p>Login to continue.</p>
+
+            <label>Email Address</label>
+
+            <input
+            type="email"
+            placeholder="you@example.com"
+            required
+            />
+
+            <label>Password</label>
+
+            <div class="password-box">
+                <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter password"
+                required
+                />
+
+                <i class="fa-solid fa-eye eye"
+                onclick="togglePassword('loginPassword',this)">
+                </i>
+            </div>
+
+            <button class="main-btn">
+                Sign In
+            </button>
+
+        </form>
+
+        <!-- SIGNUP -->
+
+        <form id="signupForm" class="hidden">
+
+            <h1>Create Account</h1>
+            <p>Create your new account.</p>
+
+            <label>Full Name</label>
+
+            <input
+            type="text"
+            id="signupName"
+            placeholder="Enter your name"
+            required
+            />
+
+            <label>Email Address</label>
+
+            <input
+            type="email"
+            id="signupEmail"
+            placeholder="you@example.com"
+            required
+            />
+
+            <label>Password</label>
+
+            <div class="password-box">
+
+                <input
+                type="password"
+                id="signupPassword"
+                placeholder="Minimum 8 characters"
+                required
+                />
+
+                <i class="fa-solid fa-eye eye"
+                onclick="togglePassword('signupPassword',this)">
+                </i>
+
+            </div>
+
+            <small id="passwordMsg"></small>
+
+            <label>Confirm Password</label>
+
+            <div class="password-box">
+
+                <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm password"
+                required
+                />
+
+                <i class="fa-solid fa-eye eye"
+                onclick="togglePassword('confirmPassword',this)">
+                </i>
+
+            </div>
+
+            <small id="confirmMsg"></small>
+
+            <div class="captcha">
+
+                <span id="captchaQuestion"></span>
+
+                <input
+                type="number"
+                id="captchaAnswer"
+                placeholder="Answer"
+                required
+                />
+
+            </div>
+
+            <button class="main-btn">
+                Create Account
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
